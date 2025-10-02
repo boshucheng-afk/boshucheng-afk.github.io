@@ -6,70 +6,95 @@
   <title>程博舒的自我介紹</title>
   <style>
     body {
-      background-color: #1e1e1e;
-      color: white;
-      font-family: "Segoe UI", sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 40px 20px;
-    }
-
-    img {
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid white;
-      margin-bottom: 20px;
-    }
-
-    h1 {
-      font-size: 2em;
-      margin-bottom: 10px;
-    }
-
-    .intro, .education {
-      max-width: 600px;
-      text-align: center;
-      line-height: 1.6;
-      margin-bottom: 30px;
-    }
-
-    .education ul {
-      list-style-type: none;
+      background-color: #121212;
+      color: #ffffff;
+      font-family: 'Segoe UI', 'Noto Sans TC', sans-serif;
+      margin: 0;
       padding: 0;
     }
 
-    .education li {
-      margin: 10px 0;
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .profile-pic {
+      display: block;
+      margin: 0 auto 20px auto;
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #ffffff;
+      box-shadow: 0 0 10px rgba(255,255,255,0.2);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .section {
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      padding: 25px;
+      margin-top: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 15px;
+      color: #ffd700;
+    }
+
+    .section p,
+    .section li {
+      line-height: 1.8;
+      font-size: 1.1rem;
+    }
+
+    .education-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .education-list li {
+      margin-bottom: 15px;
     }
 
     @media (max-width: 600px) {
-      body {
-        padding: 20px 10px;
+      h1 {
+        font-size: 2rem;
+      }
+      .section {
+        padding: 20px;
       }
     }
   </style>
 </head>
 <body>
-  <img src="IMG_8606 (1).PNG" alt="程博舒的照片">
-  <h1>程博舒</h1>
+  <div class="container">
+    <img src="me.png" alt="程博舒的照片" class="profile-pic">
+    <h1>程博舒</h1>
 
-  <div class="intro">
-    <p>畢業於華僑高中，喜歡運動、聽音樂、唱歌，特別熱愛籃球，常去公園打球。</p>
-    <p>身體狀況良好，能適應體力工作。</p>
-    <p>做事負責，有交代的工作一定會完成。</p>
-    <p>願意學習新事物，不怕吃苦。</p>
-  </div>
+    <div class="section">
+      <h2>關於我</h2>
+      <p>畢業於華僑高中，喜歡運動、聽音樂、唱歌，尤其是籃球，經常在公園打球。</p>
+      <p>身體狀況良好，能適應體力活；做事負責，交代的事情一定會完成。</p>
+      <p>樂於學習新事物，不怕吃苦，願意不斷成長與挑戰自己。</p>
+    </div>
 
-  <div class="education">
-    <h2>學習歷程</h2>
-    <ul>
-      <li><strong>新埔國中：</strong>開始接觸吉他，喜歡上音樂</li>
-      <li><strong>華僑高中：</strong>參加吉他社，擔任教學，培養領導與教學能力</li>
-      <li><strong>中原大學 智慧運算學士班：</strong>學習 coding，提升邏輯思維能力</li>
-    </ul>
+    <div class="section">
+      <h2>學習歷程</h2>
+      <ul class="education-list">
+        <li><strong>新埔國中：</strong> 開始接觸吉他，進而對音樂產生濃厚興趣</li>
+        <li><strong>華僑高中：</strong> 加入吉他社，擔任教學，培養領導力與教學能力</li>
+        <li><strong>中原大學 智慧運算學士班：</strong> 開始學習程式設計，強化邏輯思維與問題解決能力</li>
+      </ul>
+    </div>
   </div>
 </body>
 </html>
